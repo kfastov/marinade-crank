@@ -83,7 +83,9 @@ async fn send_transaction(
         Pubkey::from_str(STATE_PUBKEY).unwrap(),
     );
     let stake_account = Keypair::new();
-    let program = client.program(Pubkey::from_str(MARINADE_PROGRAM).unwrap());
+    let program = client
+        .program(Pubkey::from_str(MARINADE_PROGRAM).unwrap())
+        .unwrap();
     let ix = stake_reserve(
         &program,
         &Pubkey::from_str(STATE_PUBKEY).unwrap(),

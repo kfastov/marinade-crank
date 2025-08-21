@@ -6,12 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anchor-client = "0.27.0"
-anchor-lang = "0.27.0"
-clap = { version = "4.5.4", features = ["derive"] }
-marinade-client-rs = { git = "https://github.com/marinade-finance/marinade-common-rs-cli" }
-solana-sdk = "1.14.18"
-tokio = "1.37.0"
+anchor-client = "0.31.1"
+anchor-lang = "0.31.1"
+clap = { version = "4.5.45", features = ["derive"] }
+marinade-client-rs = { git = "https://github.com/kfastov/marinade-common-rs-cli" }
+solana-sdk = "2.3.1"
+tokio = "1.47.1"
 
 [[bin]]
 name = "marinade-crank"
